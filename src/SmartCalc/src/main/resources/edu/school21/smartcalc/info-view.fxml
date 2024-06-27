@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.smartcalc.InfoView">
+   <children>
+      <TextArea editable="false" layoutX="33.0" layoutY="75.0" prefHeight="326.0" prefWidth="538.0" text="Данное приложение представляет собой калькулятор, который позволяет вычислять выражения в инфиксной записи, с помощью их перевода в польскую нотацию. На вход программы могут подаваться как целые числа, так и вещественные числа, записанные через точку. Возможно построение графика функции, заданной с помощью выражения в инфиксной нотации с переменной x. Чтобы задать значение для переменной x, используйте соответствующее текстовое поле, введите в нем нужное вам значение. Далее для выполнения рассчетов нажмите на кнопку =. Результат вычислений отобразится на поле, куда вводились данные. Результат вычислений с точностью 7 знаков после запятой, а также информация о произошедших ошибках отображаются в результирующем поле. " wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Button fx:id="closeButton" layoutX="275.0" layoutY="421.0" mnemonicParsing="false" onAction="#onCloseButtonClicked" text="Close" />
+      <Label layoutX="41.0" layoutY="33.0" text="Designed by Usulelia" />
+   </children>
+</AnchorPane>

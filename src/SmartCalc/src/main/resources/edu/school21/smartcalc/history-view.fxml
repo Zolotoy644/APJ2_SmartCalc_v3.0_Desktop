@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.smartcalc.HistoryView">
+   <children>
+      <TableView fx:id="historyTable" layoutX="33.0" layoutY="35.0" prefHeight="292.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="expressionColumn" prefWidth="416.0" text="Expression" />
+          <TableColumn fx:id="xColumn" prefWidth="117.0" text="X" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="215.0" layoutY="345.0" prefHeight="32.0" prefWidth="195.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button onAction="#onClearButtonClick" mnemonicParsing="false" text="Clear" GridPane.halignment="CENTER" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#onCloseButtonClick" text="Close" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

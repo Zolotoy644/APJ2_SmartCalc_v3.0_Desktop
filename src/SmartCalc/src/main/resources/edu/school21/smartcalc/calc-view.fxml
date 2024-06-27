@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="425.0" prefWidth="406.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.smartcalc.CalcView">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Pane prefHeight="194.0" prefWidth="363.0">
+      <children>
+         <MenuBar layoutX="-20.0" layoutY="-104.0">
+           <menus>
+             <Menu mnemonicParsing="false" text="File">
+                 <items>
+                     <MenuItem mnemonicParsing="false" onAction="#onCredButtonClick" text="Credit calculator" />
+                 </items>
+                 <items>
+                     <MenuItem mnemonicParsing="false" onAction="#onDepositButtonClick" text="Deposit calculator" />
+                 </items>
+                 <items>
+                     <MenuItem mnemonicParsing="false" onAction="#onGraphButtonClick" text="Draw graph" />
+                 </items>
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#onCloseButtonClick" text="Close" />
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                 <MenuItem onAction="#onHistoryButtonClick" mnemonicParsing="false" text="History" />
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Help">
+               <items>
+                 <MenuItem onAction="#onAboutButtonClick" mnemonicParsing="false" text="About" />
+               </items>
+             </Menu>
+           </menus>
+         </MenuBar>
+         <Button layoutY="21.0" mnemonicParsing="false" onAction="#onAcButtonClick" prefHeight="50.0" prefWidth="50.0" text="AC" />
+         <Button layoutX="50.0" layoutY="21.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="(" />
+         <Button layoutX="100.0" layoutY="21.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text=")" />
+         <Button layoutX="150.0" layoutY="21.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="x" />
+         <Button fx:id="credButton" layoutX="200.0" layoutY="21.0" mnemonicParsing="false" onAction="#onCredButtonClick" prefHeight="50.0" prefWidth="50.0" text="Cr" />
+         <Button layoutX="269.0" layoutY="21.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="sin" />
+         <Button layoutX="319.0" layoutY="21.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="sqrt" />
+         <Button layoutY="71.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="7" />
+         <Button layoutX="50.0" layoutY="71.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="8" />
+         <Button layoutX="100.0" layoutY="71.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="9" />
+         <Button layoutX="150.0" layoutY="71.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="/" />
+         <Button fx:id="depositButton" layoutX="200.0" layoutY="71.0" mnemonicParsing="false" onAction="#onDepositButtonClick" prefHeight="50.0" prefWidth="50.0" text="Dep" />
+         <Button layoutX="269.0" layoutY="71.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="cos" />
+         <Button layoutX="319.0" layoutY="71.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="log" />
+         <Button layoutY="121.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="4" />
+         <Button layoutX="50.0" layoutY="121.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="5" />
+         <Button layoutX="100.0" layoutY="121.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="6" />
+         <Button layoutX="150.0" layoutY="121.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="*" />
+         <Button onAction="#onGraphButtonClick" layoutX="200.0" layoutY="121.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Gr" />
+         <Button layoutX="269.0" layoutY="121.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="tan" />
+         <Button layoutX="319.0" layoutY="121.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="ln" />
+         <Button layoutY="171.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="1" />
+         <Button layoutX="50.0" layoutY="171.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="2" />
+         <Button layoutX="100.0" layoutY="171.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="3" />
+         <Button layoutX="150.0" layoutY="171.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="-" />
+         <Button layoutX="269.0" layoutY="171.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="asin" />
+         <Button layoutX="319.0" layoutY="171.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="atan" />
+         <Button layoutX="200.0" layoutY="171.0" mnemonicParsing="false" onAction="#onEqualButtonClick" prefHeight="100.0" prefWidth="50.0" text="=" />
+         <Button layoutY="221.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="100.0" text="0" />
+         <Button layoutX="150.0" layoutY="221.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="+" />
+         <Button fx:id="pointButton" layoutX="100.0" layoutY="221.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="." />
+         <Button layoutX="269.0" layoutY="221.0" mnemonicParsing="false" onAction="#onFuncButtonClick" prefHeight="50.0" prefWidth="50.0" text="acos" />
+         <Button layoutX="319.0" layoutY="221.0" mnemonicParsing="false" onAction="#onNumButtonClick" prefHeight="50.0" prefWidth="50.0" text="mod" />
+         <Label layoutX="7.0" layoutY="-16.0" prefHeight="30.0" prefWidth="35.0" text="X =" />
+         <TextField text="0" layoutX="42.0" layoutY="-13.0" prefHeight="26.0" prefWidth="328.0" fx:id="xVal" />
+         <TextField fx:id="expression" layoutX="-1.0" layoutY="-69.0" prefHeight="49.0" prefWidth="371.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+      </children>
+   </Pane>
+</VBox>
